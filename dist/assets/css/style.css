@@ -1829,6 +1829,34 @@
     }
 }
 
+.social {
+    display: flex;
+    align-items: center;
+}
+
+.social__text {
+    margin-right: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #121212;
+}
+
+.social__link {
+    margin-right: 0.1rem;
+}
+
+.social__link:hover .social__icon {
+    fill: #ec3482;
+}
+
+.social__icon {
+    display: block;
+    width: 25px;
+    height: 16px;
+    fill: #ababab;
+    transition: fill 0.1s linear;
+}
+
 .footer {
     padding-bottom: 2rem;
 }
