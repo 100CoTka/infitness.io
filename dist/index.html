@@ -1,29 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="assets/css/style.min.css">
-    
-    <!-- Useful meta tags -->
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="index, follow, noodp">
-    <meta name="googlebot" content="index, follow">
-    <meta name="google" content="notranslate">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    
-    <title>HomePage</title>
-</head>
+	<meta charset="UTF-8">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/style.min.css">
+	
+	<!-- Useful meta tags -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="index, follow, noodp">
+	<meta name="googlebot" content="index, follow">
+	<meta name="google" content="notranslate">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	
+	<title>HomePage</title></head>
+
 <body>
+	<div class="page">
 
+		<!-- Header -->
+		<header class="header">
+			<div class="container">
+				<div class="header__inner">
+					<div class="row header__row">
+						<div class="col-lg-2">
+							<a class="logo" href="#"><span class="logo__prefix">in</span>Fitness</a>
+						</div>
+						<div class="col-lg-8">
+							<nav class="nav">
+								<a class="nav__link active" href="#">Главная</a>
+								<a class="nav__link" href="#">Услуги</a>
+								<a class="nav__link" href="#">Портфолио</a>
+							</nav>
+						</div>
+						<div class="col-lg-2">
+							<div class="lang">
+								<a class="lang__item active" href="#">ru</a>
+								<a class="lang__item" href="#">en</a>
+								<a class="lang__item" href="#">ro</a>
+							</div>
+						</div>
+					</div><!-- /.row -->
+				</div><!-- /.header__inner -->
+			</div><!-- /.container -->
+		</header>
+		<!-- Content -->
+		<div class="content">
+			
+			<div class="container">
+				<div class="intro">
+					<div class="intro__text">Меня зовут</div>
+					<div class="intro__title">Татьяна Локтева</div>
+					<div class="intro__subtitle">
+						я <span class="intro__subtitle-pink">фитнес тренер</span> и создаю <span class="intro__subtitle-pink">идеальное тело без диет</span>
+					</div>
+					<div class="row">
+						<div class="col-lg-3">
+							<a class="btn btn--pink" href="#">Текст: (Оставить заявку?)</a>
+						</div>
+						<div class="col-lg-9">
+							<ul class="contacts">
+								<li class="contacts__item">
+									<a class="contacts__link" href="tel:+37379999999">
+										+373-79-999-999
+									</a>
+								</li>
+								<li class="contacts__item">
+									<a class="contacts__link" href="mailto:test@mail.com">
+										test@mail.com
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div><!-- /.row -->
+				</div><!-- /.intro -->
+			</div><!-- /.container -->
+			<img class="author" src="assets/img/intro-photo_600.png" alt="intro photo">
+			<div class="circle"></div>
+		</div>
 
-<h1>HomePage New Project</h1>
-
-
-
-<script src="assets/js/app.min.js"></script>
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="container">
+				test
+			</div>
+		</footer>
+	</div>
+	<script src="assets/js/app.min.js"></script>
 
 </body>
+
 </html>
