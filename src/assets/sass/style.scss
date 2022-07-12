@@ -11,8 +11,23 @@
 @import "../../../node_modules/bootstrap/scss/grid";
 
 /* Default styles */
+html {
+	font-size: 15px;
+}
+
 body {
 	margin: 0;
+	background-color: $gray;
+	font-family: "Montserrat", sans-serif;
+	color: $black;
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
 }
 
 /* Blocks */
