@@ -1,0 +1,39 @@
+.contacts {
+	margin: 1rem 0 0;
+	padding: 0;
+	list-style: none;
+
+	&__item {
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: 2rem;
+
+		&::after {
+			content: "";
+			position: absolute;
+			right: -1.5rem;
+			top: 50%;
+			z-index: 1;
+			display: block;
+			width: 10px;
+			height: 1px;
+			background-color: $black;
+		}
+
+		&:last-child {
+			&::after {
+				display: none;
+			}
+		}
+	}
+
+	&__link {
+		color: $black;
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
