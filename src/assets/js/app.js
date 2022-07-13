@@ -7,4 +7,11 @@
 //= ../../../node_modules/bootstrap/js/dist/modal.js
 
 /* Slick-carousel JS */
-//= components/slick.js
+//= ../../../node_modules/slick-carousel/slick/slick.js
+
+/* Analog document.ready for working JQuery */
+$(function () {
+
+	//= components/slick.js
+
+})
