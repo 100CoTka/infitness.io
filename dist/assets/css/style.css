@@ -1,5 +1,6 @@
 /* Common */
 /* Bootstrap Modal */
+/* Breakpoints */
 /* Slick-carousel */
 /* Slider */
 .slick-slider {
@@ -1946,11 +1947,23 @@
     color: #121212;
 }
 
+@media (max-width: 575px) {
+    .intro__title {
+        font-size: 2rem;
+    }
+}
+
 .intro__subtitle {
     margin-bottom: 2rem;
     font-size: 1.6rem;
     font-weight: 400;
     color: #121212;
+}
+
+@media (max-width: 575px) {
+    .intro__subtitle {
+        font-size: 1.2rem;
+    }
 }
 
 .intro__subtitle-pink {
@@ -2041,6 +2054,19 @@
     z-index: 2;
 }
 
+@media (max-width: 1330px) {
+    .author {
+        right: 2rem;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 575px) {
+    .author {
+        display: none;
+    }
+}
+
 .circle {
     width: 450px;
     height: 450px;
@@ -2053,6 +2079,19 @@
     border-radius: 60% 40% 36% 64%/38% 30% 70% 62%;
     -webkit-animation: circleRadius 10s alternate infinite;
     animation: circleRadius 10s alternate infinite;
+}
+
+@media (max-width: 1330px) {
+    .circle {
+        right: 0;
+        bottom: 10px;
+    }
+}
+
+@media (max-width: 575px) {
+    .circle {
+        display: none;
+    }
 }
 
 @-webkit-keyframes circleRadius {

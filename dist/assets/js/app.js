@@ -4856,7 +4856,10 @@ $(function () {
 		dots: true,
 		speed: 800,
 		slidesToShow: 2,
-		slidesToScroll: 2
+		slidesToScroll: 2,
+		autoplay: true,
+		autoplaySpeed: 5000,
+		pauseOnHover: true
 	});
 	
 	$('#portfolio-arrow-prev').on('click', function (event) {

@@ -3,4 +3,13 @@
 	right: 10rem;
 	bottom: 0;
 	z-index: 2;
+
+	@media (max-width: $brp_xl) {
+		right: 2rem;
+		max-width: 400px;
+	}
+
+	@media (max-width: $brp_sm) {
+		display: none;
+	}
 }
