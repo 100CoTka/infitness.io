@@ -1,4 +1,32 @@
 .portfolio {
+	position: relative;
+
+	&__slider {
+		position: relative;
+		height: 277px;
+		overflow: hidden;
+
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 2;
+			display: block;
+			width: 100%;
+			height: 100%;
+			background: $white url("../img/ajax-loader.gif") center no-repeat;
+		}
+
+		&.slick-initialized {
+			overflow: visible;
+
+			&::after {
+				display: none;
+			}
+		}
+	}
+
 	&__item {
 		position: relative;
 		margin: 0 auto;
@@ -40,5 +68,41 @@
 		pointer-events: none;
 		transform: translateY(100%);
 		transition: transform 0.2s linear;
+	}
+
+	&__arrow {
+		position: absolute;
+		top: 50%;
+		z-index: 2;
+		padding: 0;
+		background: none;
+		border: 0;
+		cursor: pointer;
+		transform: translateY(-50%);
+
+		&:hover {
+			.portfolio__arrow-icon {
+				fill: $pink;
+			}
+		}
+
+		&:focus {
+			outline: none;
+		}
+
+		&--prev {
+			left: -2rem;
+		}
+
+		&--next {
+			right: -2rem;
+		}
+	}
+
+	&__arrow-icon {
+		width: 20px;
+		height: 30px;
+		fill: #c5c5c5;
+		transition: fill 0.1s linear;
 	}
 }

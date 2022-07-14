@@ -99,3 +99,42 @@
 .slick-arrow.slick-hidden {
 	display: none;
 }
+
+.slick-dots {
+	position: absolute;
+	bottom: -3rem;
+	left: 0;
+	z-index: 2;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	list-style: none;
+
+	& li {
+		display: inline-block;
+		margin-right: 0.25rem;
+		vertical-align: middle;
+
+		&.slick-active {
+			button {
+				background-color: $pink;
+			}
+		}
+	}
+
+	& button {
+		width: 1rem;
+		height: 1rem;
+		padding: 0;
+		border: 0;
+		background-color: #c5c5c5;
+		font-size: 0;
+		color: transparent;
+		cursor: pointer;
+
+		&:focus {
+			outline: none;
+		}
+	}
+}
