@@ -9,6 +9,15 @@
 	box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
 	border-radius: 60% 40% 36% 64% / 38% 30% 70% 62%;
 	animation: circleRadius 10s alternate infinite;
+
+	@media (max-width: $brp_xl) {
+		right: 0;
+		bottom: 10px;
+	}
+
+	@media (max-width: $brp_sm) {
+		display: none;
+	}
 }
 
 @keyframes circleRadius {

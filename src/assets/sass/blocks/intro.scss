@@ -10,6 +10,10 @@
 		line-height: 1.2;
 		font-weight: 600;
 		color: $black;
+
+		@media (max-width: $brp_sm) {
+			font-size: 2rem;
+		}
 	}
 
 	&__subtitle {
@@ -17,6 +21,10 @@
 		font-size: 1.6rem;
 		font-weight: 400;
 		color: $black;
+
+		@media (max-width: $brp_sm) {
+			font-size: 1.2rem;
+		}
 
 		&-pink {
 			color: $pink;
